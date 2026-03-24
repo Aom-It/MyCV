@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Witsanu </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            background: linear-gradient(135deg, #0f001a, #3a0ca3, #ff006e);
+            background-size: 300% 300%;
+            animation: bgMove 10s infinite alternate;
+        }
+
+        @keyframes bgMove {
+            0% {
+                background-position: left;
+            }
+
+            100% {
+                background-position: right;
+            }
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+
+            padding: 50px;
+            border-radius: 25px;
+            width: 700px;
+
+            background: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(12px);
+
+            box-shadow: 0 0 40px rgba(255, 0, 110, 0.7);
+
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .text {
+            flex: 1;
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 10px;
+            text-shadow: 0 0 15px #ff006e;
+        }
+
+        p {
+            color: #ccc;
+            margin: 8px 0;
+            font-size: 14px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+
+            padding: 12px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+
+            background: linear-gradient(45deg, #7209b7, #ff006e);
+            box-shadow: 0 0 15px rgba(255, 0, 110, 0.6);
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(255, 0, 110, 1);
+        }
+
+        .image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+
+            border: 4px solid #ff006e;
+            box-shadow: 0 0 30px #ff006e;
+
+            transition: 0.3s;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 50px #ff006e;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="text">
+            <h1>Witsanu Kaeokrachangsuk</h1>
+
+            <p>
+                Hello! ผมชื่อออม ชื่อจริงผมชื่อ วิษณุ แก้วกระจ่างสุข ปีนี้อายุ 19 ปีครับ ผมเป็นนักศึกษาในสาขาเทคโนโลยีสารสนเทศที่ DTI และกำลังศึกษาเกี่ยวกับการพัฒนาเว็บและการออกแบบ UI/UX
+                ผมเป็นนักพัฒนาเว็บที่ชอบออกแบบ UI ให้ดูทันสมัยและใช้งานง่าย
+                สนใจด้าน Frontend และการสร้าง Animation บนเว็บไซต์กำลังพัฒนาทักษะเพื่อก้าวสู่การเป็น Web Developer
+                มืออาชีพ 
+            </p>
+
+            <a href="index MyCV.html" class="btn">กลับไปหน้าแรกครับท่าน
+            </a>
+        </div>
+
+        <div class="image">
+            <img src="./images/Witsanu3.png" class="profile-img">
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Axm-It Site By DTI</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            background: linear-gradient(135deg, #0f001a, #3a0ca3, #ff006e);
+            background-size: 300% 300%;
+            animation: bgMove 10s infinite alternate;
+        }
+
+        @keyframes bgMove {
+            0% {
+                background-position: left;
+            }
+
+            100% {
+                background-position: right;
+            }
+        }
+
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.5;
+            animation: float 6s infinite ease-in-out;
+        }
+
+        .c1 {
+            width: 300px;
+            height: 300px;
+            background: #ff006e;
+            top: 10%;
+            left: 10%;
+        }
+
+        .c2 {
+            width: 250px;
+            height: 250px;
+            background: #7209b7;
+            bottom: 10%;
+            right: 10%;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            padding: 50px;
+            border-radius: 20px;
+
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+
+            box-shadow: 0 0 30px rgba(255, 0, 110, 0.7);
+
+            animation: floatBox 4s infinite ease-in-out;
+        }
+
+        @keyframes floatBox {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px #ff006e;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 15px;
+            padding: 15px 35px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+
+            background: linear-gradient(45deg, #7209b7, #ff006e);
+
+            box-shadow: 0 0 15px rgba(255, 0, 110, 0.6);
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.15);
+            box-shadow: 0 0 30px rgba(255, 0, 110, 1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+
+    <div class="container">
+        <h1> Welcome to My Site</h1>
+
+        <a href="mypageA.html" class="btn">Witsanu 1 </a>
+        <a href="mypageB.html" class="btn">Witsanu 2 </a>
+    </div>
+
+</body>
+
+</html>
